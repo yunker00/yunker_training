@@ -1,4 +1,4 @@
-package com.yunker.yunkertraining;
+package com.yunker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
