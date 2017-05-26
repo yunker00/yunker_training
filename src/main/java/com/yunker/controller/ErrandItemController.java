@@ -3,31 +3,30 @@ package com.yunker.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.yunker.domain.ErrandItem;
 
-@RestController
-@RequestMapping("erranditem")
+@Controller
+@RequestMapping("errand")
 public class ErrandItemController {
 
 	private List<ErrandItem> items = new ArrayList<>();
-	
-	
+		
 	@GetMapping
-	public List<ErrandItem> getErrandItems(){
-		System.out.println("Received !!!");
-		return items;
+	public String getInput(Model m){
+		m.addAttribute(new ErrandItem());
+		return "errand/input";
 	}
 	
 	@PostMapping
-	public ErrandItem registerErrandItem(@RequestBody ErrandItem item){
-		items.add(item);
-		return item;
+	public String registerErrandItem(ErrandItem errandItem){
+		items.add(errandItem);
+		return "errand/output";
 	}
 	
 }

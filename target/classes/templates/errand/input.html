@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<h2>Input form</h2>
+	<form action="./output.html" th:action="@{/errand}"
+		th:object="${errandItem}" method="POST">
+		<div>Please input text</div>
+		<div>
+			<input type="text" name="name" th:field="*{name}" /><br />
+		</div>
+		<div>Please description text</div>
+		<div>
+			<input type="text" name="description" th:field="*{description}" /><br />
+		</div>
+		<div>
+			<button type="submit">Send data</button>
+		</div>
+	</form>
+
+</body>
+</html>

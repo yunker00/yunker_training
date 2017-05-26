@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.yunker.yunkertraining.YunkerTrainingApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.05 sec - in com.yunker.yunkertraining.YunkerTrainingApplicationTests

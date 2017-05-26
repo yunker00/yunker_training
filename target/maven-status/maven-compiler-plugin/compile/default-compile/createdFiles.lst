@@ -1,0 +1,4 @@
+com\yunker\controller\WelComeController.class
+com\yunker\controller\ErrandItemController.class
+com\yunker\YunkerTrainingApplication.class
+com\yunker\domain\ErrandItem.class

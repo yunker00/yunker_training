@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<h2>Output form</h2>
+	<div>
+		<span th:text="*{errandItem.name}">Show text</span>
+	</div>
+	<div>
+		<span th:text="*{errandItem.description}">Show text</span>
+	</div>
+	<br />
+	<div>
+		<a href="../index.html" th:href="@{/}">Go to top</a>
+	</div>
+</body>
+</html>
